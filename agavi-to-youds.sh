@@ -36,3 +36,5 @@ do
    awk '{gsub(/agavi.org/,"youds.com"); print $0;}' $file > ./tempFile && mv ./tempFile $file;
    awk '{gsub(/agavi/,"youds"); print $0;}' $file > ./tempFile && mv ./tempFile $file;
 done
+
+ln -s /usr/local/bin/youds-framework/src/youds-framework.php /usr/local/bin/youds-framework/youds-framework.php
